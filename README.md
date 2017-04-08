@@ -97,18 +97,14 @@ Millionaire [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg
 - 大貧民が複数いる場合は、識別IDの辞書順とする。
 
 <2017/04/08 ver1.0ルール制定>
-## Demo
 
-## VS. 
+## 技術的な仕様
+JK大富豪電脳戦で使用するAIプログラム(以下，AI)は、Visual Studio環境のC#で作成することを基本としますが，大富豪ホストプログラムとの通信が可能であれば技術は問いません。  
+AIはゲーム開始から終了までユーザー他，ホストプログラム以外との通信や入力なく，独立して動くものとします。
+ホストプログラムとの通信はWCFを使用します。
 
-## Requirement
-
-## Usage
-
-## Install
-
-## Contribution
+### メソッド一覧
+執筆中
 
 ## Author
-
 [D-Yam](https://github.com/D-Yam)
