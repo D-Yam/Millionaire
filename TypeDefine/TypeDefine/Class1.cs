@@ -8,7 +8,7 @@ namespace TypeDefine
 	/// <summary>
 	/// プレイヤーの現在の状態を表します。
 	/// </summary>
-	enum Status
+	public enum Status
 	{
 		/// <summary>
 		/// 現在プレイヤーのターンです。
@@ -35,7 +35,7 @@ namespace TypeDefine
 	/// プレイヤー
 	/// </summary>
 	/// <remarks>初期化する際にIDを指定してください。</remarks>
-	class Player
+	public class Player
 	{
 		/// <summary>
 		/// プレイヤーを示すIDです。他者と重複することは出来ません。
@@ -68,7 +68,7 @@ namespace TypeDefine
 	/// <summary>
 	/// トランプの数字(絵札を含む)です。
 	/// </summary>
-	enum Rank
+	public enum Rank
 	{
 		Ace,
 		Two,
@@ -88,7 +88,7 @@ namespace TypeDefine
 	/// <summary>
 	/// トランプのスートです。
 	/// </summary>
-	enum Suit
+	public enum Suit
 	{
 		Hearts,
 		Clubs,
@@ -99,10 +99,12 @@ namespace TypeDefine
 	/// <summary>
 	/// トランプのカード
 	/// </summary>
-	class Card
+	public class Card
 	{
 		public Suit Suit { set; get; }
 		public Rank Rank { set; get; }
+		public bool IsJoker { set; get; }
+
 
 
 	}
