@@ -52,7 +52,6 @@
 			this.label1.Size = new System.Drawing.Size(24, 12);
 			this.label1.TabIndex = 1;
 			this.label1.Text = "URI";
-			this.label1.Click += new System.EventHandler(this.label1_Click);
 			// 
 			// button1
 			// 
@@ -62,6 +61,7 @@
 			this.button1.TabIndex = 2;
 			this.button1.Text = "Host";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// listView1
 			// 
@@ -112,6 +112,7 @@
 			this.Controls.Add(this.textBox1);
 			this.Name = "Form1";
 			this.Text = "Form1";
+			this.Load += new System.EventHandler(this.Form1_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
