@@ -23,37 +23,47 @@ namespace InterfaceDefine
 	    /// 現在一番上に出されているカード
 	    /// </summary>
 	    /// <returns>カードのリスト</returns>
-	    [OperationContract]
-	    List<Card> Layout();
+	    public List<Card> Layout()
+	    {
+		    return null;
+	    }
 
 	    /// <summary>
 	    /// 最後に場札が流れたあと最初に出されたカード
 	    /// </summary>
 	    /// <returns>カードのリスト</returns>
-	    [OperationContract]
-	    List<Card> Lead();
+	    public List<Card> Lead()
+	    {
+		    return null;
+	    }
 
 	    /// <summary>
 	    /// 最後に場札が流れてから今までに出されたカード
 	    /// </summary>
 	    /// <returns>indexが若いほど古いカードです。</returns>
-	    [OperationContract]
-	    List<List<Card>> TableCards();
+	    public List<List<Card>> TableCards()
+	    {
+		    return null;
+	    }
 
 	    /// <summary>
 	    /// 今までに流れたカードのリスト
 	    /// </summary>
 	    /// <returns>indexが若いほど古いカードです。</returns>
-	    [OperationContract]
-	    List<List<Card>> Discards();
+	    public List<List<Card>> Discards()
+	    {
+		    return null;
+	    }
 
 	    /// <summary>
 	    /// そのカードが出せるかどうか判定します。
 	    /// </summary>
 	    /// <param name="checkCards">出したいカード</param>
 	    /// <returns>判定</returns>
-	    [OperationContract]
-	    bool CheckFollow(List<Card> checkCards);
+	    public bool CheckFollow(List<Card> checkCards)
+	    {
+		    return false;
+	    }
 
 	    /// <summary>
 	    /// そのカードが出せるかどうか判定します。
@@ -61,7 +71,9 @@ namespace InterfaceDefine
 	    /// <param name="layout">現在の場札</param>
 	    /// <param name="checkCards">出したいカード</param>
 	    /// <returns>判定</returns>
-	    [OperationContract]
-	    bool CheckFollow(List<Card> layout, List<Card> checkCards);
+	    public bool CheckFollow(List<Card> layout, List<Card> checkCards)
+	    {
+		    return false;
+	    }
     }
 }
