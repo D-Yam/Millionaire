@@ -50,7 +50,7 @@ namespace TypeDefine
 		/// <summary>
 		/// プレイヤーの現在の手札
 		/// </summary>
-		public List<Card> Hand { set; get; }
+		public List<Index> Hand { set; get; }
 
 		/// <summary>
 		/// プレイヤーのIDを指定して初期化します。
@@ -97,17 +97,24 @@ namespace TypeDefine
 	}
 
 	/// <summary>
-	/// トランプのカード
+	/// トランプのインデックス(ランクとスート)
 	/// </summary>
-	public class Card
+	public class Index
 	{
 		public Suit Suit { set; get; }
 		public Rank Rank { set; get; }
 		public bool IsJoker { set; get; }
-
-
-
 	}
 
+	/// <summary>
+	/// トランプのカード。そのカードの持ち主プレイヤーIDと共に管理されます。
+	/// </summary>
+	/// <remarks>Indexクラスを継承しています。</remarks>
+	/// <seealso cref="Index"/>
+	public class Card :Index
+	{
+		public string ID { set; get; }
+	}
 
+	
 }

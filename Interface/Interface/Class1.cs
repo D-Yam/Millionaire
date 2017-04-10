@@ -44,6 +44,25 @@ namespace Interface
 		[OperationContract]
 		List<List<Card>> Discards();
 
+		/// <summary>
+		/// そのカードが出せるかどうか判定します。
+		/// </summary>
+		/// <param name="checkCards">出したいカード</param>
+		/// <returns>判定</returns>
+		[OperationContract]
+		bool CheckFollow(List<Card> checkCards);
+
+		/// <summary>
+		/// そのカードが出せるかどうか判定します。
+		/// </summary>
+		/// <param name="layout">現在の場札</param>
+		/// <param name="checkCards">出したいカード</param>
+		/// <returns>判定</returns>
+		[OperationContract]
+		bool CheckFollow(List<Card> layout, List<Card> checkCards);
+
+
+
 
 
 	}
