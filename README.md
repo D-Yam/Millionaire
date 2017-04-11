@@ -107,16 +107,17 @@ AIはゲーム開始から終了までユーザー他，ホストプログラム
 ホストプログラムとの通信はWCFを使用します。
 
 ### 提供するもの
-完成したらルートに持ってくるか新たにディレクトリを作るかしますが，それまでの間は[名前]/[名前]/bin/debug/にあります。
 
-- TypeDefine.dll
+- TypeDefine
 : 型の定義をしています。参照に追加して使用してください。
-- Interface.dll
+- Interface
 : WCFで提供するインターフェースです。参照に追加して使用してください。
-- InterfaceDefine.dll
+- InterfaceDefine
 : インターフェースの定義ファイルです。クライアントを作成する際には使用しません。
 - MillionaireHost
 : ホストアプリケーション本体です。
+- MillionaireClient
+: クライアントアプリケーションのひな形(予定)です。
 
 
 ## Author
