@@ -49,7 +49,7 @@ namespace Interface
 		/// </summary>
 		/// <param name="checkCards">出したいカード</param>
 		/// <returns>判定</returns>
-		[OperationContract]
+		[OperationContract(Name = "byNowLayout")]
 		bool CheckFollow(List<Card> checkCards);
 
 		/// <summary>
@@ -58,7 +58,7 @@ namespace Interface
 		/// <param name="layout">現在の場札</param>
 		/// <param name="checkCards">出したいカード</param>
 		/// <returns>判定</returns>
-		[OperationContract]
+		[OperationContract(Name = "byLayoutOfArgument")]
 		bool CheckFollow(List<Card> layout, List<Card> checkCards);
 
 

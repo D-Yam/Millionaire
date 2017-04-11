@@ -43,6 +43,7 @@
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(161, 19);
 			this.textBox1.TabIndex = 0;
+			this.textBox1.Text = "net.pipe://localhost/sample";
 			// 
 			// label1
 			// 

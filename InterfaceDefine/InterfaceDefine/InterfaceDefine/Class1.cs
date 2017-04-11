@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using Interface;
 using TypeDefine;
+using System.ServiceModel;
 
 namespace InterfaceDefine
 {
+	[ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     public class InterfaceDefine : IWcfInterface
     {
 	    /// <summary>
